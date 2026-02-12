@@ -1,0 +1,341 @@
+/* Fuentes y reset básico */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+}
+
+/* Fondo oscuro general */
+.bg-dark {
+  background-color: #1E1E2F;
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+/* Fondo login centrado */
+.login-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Tarjeta de login */
+.login-card {
+  background-color: #2D2D44;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(108, 92, 231, 0.25);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+/* Encabezado con icono */
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header .login-icon {
+  font-size: 2.2rem;
+  color: #6C5CE7;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login-header h3 {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Alerta personalizada */
+.alert-custom {
+  background-color: rgba(108, 92, 231, 0.15);
+  border: 1px solid #6C5CE7;
+  color: #FFFFFF;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.alert-custom.d-none {
+  display: none;
+}
+
+/* Grupo de inputs */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* Inputs y selects (base común) */
+.form-input,
+
+.form-input-filter
+ {
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input {
+  width: 90%;
+}
+
+.form-input::placeholder,
+.form-input-filter::placeholder {
+  color: #B2BEC3;
+  opacity: 0.9;
+}
+
+.form-input:focus,
+.form-input-filter:focus {
+  border-color: #6C5CE7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.25);
+}
+
+
+
+/* Botones base */
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-primary-custom,
+.btn-secondary-custom {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Botón primario */
+.btn-primary,
+.btn-primary-custom {
+  background-color: #6C5CE7;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-primary-custom:hover {
+  background-color: #00CEC9;
+  box-shadow: 0 0 12px rgba(0, 206, 201, 0.4);
+}
+
+/* Botón secundario */
+.btn-secondary,
+.btn-secondary-custom {
+  background-color: transparent;
+  color: #B2BEC3;
+  border: 1px solid rgba(178, 190, 195, 0.4);
+}
+
+.btn-secondary:hover,
+.btn-secondary-custom:hover {
+  background-color: rgba(108, 92, 231, 0.15);
+  border-color: #6C5CE7;
+  color: #FFFFFF;
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+  background-color: #2D2D44;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+/* Contenedor principal (home / form) */
+.container-custom {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Cabecera: título + botón añadir */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-row h3 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Filtros */
+.filters-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* Tabla personalizada (dark) */
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2D2D44;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-custom th {
+  background-color: rgba(108, 92, 231, 0.2);
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.table-custom td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+}
+
+.table-custom tbody tr:hover {
+  background-color: rgba(108, 92, 231, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+/* Título del formulario */
+.form-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive básico */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+  .login-header h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-row {
+    flex-direction: column;
+  }
+  .filter-col {
+    min-width: auto;
+  }
+  .header-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+/* Select base (form.html) */
+.form-select {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23B2BEC3' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 12px;
+}
+
+.form-select::placeholder {
+  color: #B2BEC3;
+  opacity: 0.9;
+}
+
+.form-select:focus {
+  border-color: #6C5CE7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.25);
+}
+
+/* Select en filtros (home.html) */
+.form-select-filter {
+    width: 40%;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23B2BEC3' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 12px;
+}
+
+.form-select-filter::placeholder {
+  color: #B2BEC3;
+  opacity: 0.9;
+}
+
+.form-select-filter:focus {
+  border-color: #6C5CE7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.25);
+}
+.form-select {
+    width: 20%;
+  color: #FFFFFF;
+  background-color: #1E1E2F;
+}
+.form-select-filter {
+    width: 40%;
+  color: #FFFFFF;
+  background-color: #1E1E2F;
+}
+
+.form-select option,
+.form-select-filter option {
+  background-color: #1E1E2F;
+  color: #FFFFFF;
+}
